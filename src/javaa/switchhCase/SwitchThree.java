@@ -1,0 +1,68 @@
+package javaa.switchhCase;
+
+public class SwitchThree {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int day =2;
+		String dayType;
+		String dayString;
+		
+		switch(day) {
+		
+		case 1:
+			dayString ="Monday";
+			break;
+			
+		case 2:
+			dayString="Tuesday";
+			break;
+			
+		case 3:
+			dayString="Wednsday";
+			break;
+			
+		case 4:
+			dayString="Thursday";
+			break;
+			
+		case 5:
+			dayString="Friday";
+			break;
+			
+		case 6:
+			dayString="Saturday";
+			break;
+			
+		case 7:
+			dayString="Sunday";
+			break;
+			
+			default:
+				dayString="Invalid";
+			
+		}
+		
+		switch(day) {
+		
+		case 1:			
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+			dayType="WeekDay";
+			break;
+			
+		case 6:
+		case 7:
+			dayType="Weekend";
+			break;
+			
+			default:
+				dayType="Invalid Day type";
+		}
+		
+		System.out.println(dayString+" is "+dayType);
+	}
+
+}
